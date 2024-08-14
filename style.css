@@ -693,7 +693,7 @@ article {
 
     #first-pic {
         margin:0;
-        width:45%;
+        width:50%;
         height:auto;
         box-shadow: -5px 5px #021e49;
         animation: grow-shadow 1s;
@@ -893,8 +893,9 @@ article {
     }
 
     .cv-button button {
-        width:25vw; 
-        height:6vw; 
+        width:auto; 
+        height:auto;
+        padding: 3vw;
         font-size: 3vw;
     }
     
