@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script defer src="app.js"></script>  
+    <nav>
+      <div>
+        <img src="imgs/name.png" id="navbar-name">
+      </div>
+      <div class="nav-buttons">
+          <a href="index.html">
+              <button>About</button>
+          </a>
+          <a href="research.html">
+              <button>Reseach</button>
+          </a>
+          <a href="coursework.html">
+              <button>Coursework</button>
+          </a>
+          <a href="CV.html">
+              <button>Curriculum Vitae</button>
+          </a>
+      </div>
+    </nav>
+    <article>
+      <div id="section1">
+        <img src = "imgs/firstpic.png" id="first-pic">
+        <div class="name">
+          <h1>Aniruth Venkedesh</h1>
+          <h2>Artificial Intelligence Scholar</h2>
+        </div>
+      </div>
+      <div id="section2">
+        <div class="box1">
+          <h1 class="hidden">My Philosophy</h1>
+          <hr>
+          <p class="hidden"> Dedicated to the path of lifelong learning, I seek
+            valuable lessons in every situation. Nothing
+            excites me more than using this breadth of
+            knowledge to investigate the use of cutting-edge 
+            technologies in healthcare in hopes of
+            becoming a well-rounded Physician who can
+            truly make a difference. </p>
+          <a>
+            <button>Contact Me</button>
+          </a>
+        </div>
+      </div>
+      <div id="section3">
+        <div class="skills">
+          <h1 class="hidden">What I Do</h1>
+          <p class="hidden">
+            As a member of the AI Scholars program at 
+            UF, I bring a diverse set of academic 
+            knowledge and programming skills.
+          </p>
+          <div class="buttons-container">
+            <a>
+            <button id="cv">Download CV</button>
+            </a>
+            <a href="mailto:a.venkedesh@ufl.edu">
+              <button id="coursework">View Coursework</button>
+            </a>
+          </div>
+          <div class="logos-container">
+            <div class="first-half">
+              <img src="imgs/python.png" id="python">
+              <img src="imgs/java.png" id="java">
+              <img src="imgs/c++.png" id="c">
+            </div>
+            <div class="second-half">
+              <img src="imgs/js.png" id="js">
+              <img src="imgs/html.png" id="html">
+              <img src="imgs/css.png" id="css">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="section4">
+        <form action="https://formspree.io/f/mvgprzba" method="POST" class="contact-form">
+          <h1>Let's Connect!</h1>
+
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+
+          <textarea rows="5" cols="60" name="message" placeholder="Your Message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="contact-section">
+        <div class="contact-info">
+          <p>Gainesville, FL, 32601</p>
+          <a href="mailto:a.venkedesh@ufl.edu">Email: a.venkedesh@ufl.edu</a>
+          <p>Phone: +1 (319)-800-5244</p>
+          <a href="https://www.linkedin.com/in/aniruth-venkedesh-4382892a9/" target="_blank">
+            <img src="imgs/linkedin.png">
+          </a>
+        </div>
+        <p id="credit">All SVGs and background images fall under fairuse under the unDraw and unSplash license</p>
+      </div>
+    </article>
+  </body>
+</html>
