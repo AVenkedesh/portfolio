@@ -47,22 +47,43 @@ nav {
 
 .nav-buttons {
     display: flex;
-    width: 43%;
-    justify-content: space-around;
-    align-content: center;
+    width: 100%;
+    padding-right: 30px;
+    justify-content: right;
+    align-items: center;
 }
 
-.nav-buttons button{
+.nav-buttons a:first-child{
+    margin-right: auto;
+}
+
+.nav-buttons button, .sidebar button{
     color: white;
     font-family: "Roboto Condensed";
+    margin: 0 30px;
     font-weight: 300;
-    font-size: 1.2vw;
+    font-size: 18px;
     background: none;
     border: none;
 }
 
 .nav-buttons button:hover {
     font-size: 1.3vw;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #021e49;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
 }
 
 article {
@@ -661,6 +682,10 @@ article {
 
 
 @media (max-width: 880px) {
+    .hideOnMobile {
+        display:none;
+    }
+
     #section1 {
         flex-direction: column;
         align-items: center;
@@ -668,7 +693,7 @@ article {
 
     #first-pic {
         margin:0;
-        width:50%;
+        width:45%;
         height:auto;
         box-shadow: -5px 5px #021e49;
         animation: grow-shadow 1s;
@@ -868,9 +893,8 @@ article {
     }
 
     .cv-button button {
-        width:auto; 
-        height:auto; 
-        padding: 2vw;
+        width:25vw; 
+        height:6vw; 
         font-size: 3vw;
     }
     
