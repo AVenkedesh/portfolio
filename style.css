@@ -868,8 +868,9 @@ article {
     }
 
     .cv-button button {
-        width:25vw; 
-        height:6vw; 
+        width:auto; 
+        height:auto; 
+        padding: 2vw;
         font-size: 3vw;
     }
     
