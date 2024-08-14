@@ -13,23 +13,37 @@
   <body>
     <script defer src="app.js"></script>  
     <nav>
-      <div>
-        <img src="imgs/name.png" id="navbar-name">
-      </div>
       <div class="nav-buttons">
-          <a href="index.html">
+          <a><img src="imgs/name.png" id="navbar-name"></a>
+          <a href="index.html" class="hideOnMobile">
               <button>About</button>
           </a>
-          <a href="research.html">
+          <a href="research.html" class="hideOnMobile">
               <button>Reseach</button>
           </a>
-          <a href="coursework.html">
+          <a href="coursework.html" class="hideOnMobile">
               <button>Coursework</button>
           </a>
-          <a href="CV.html">
+          <a href="CV.html" class="hideOnMobile">
               <button>Curriculum Vitae</button>
           </a>
+          <svg onclick=showSidebar() xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/"></svg>
       </div>
+      <div class="sidebar">
+        <svg onclick=hideSidebar() xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        <a href="index.html">
+            <button>About</button>
+        </a>
+        <a href="research.html">
+            <button>Reseach</button>
+        </a>
+        <a href="coursework.html">
+            <button>Coursework</button>
+        </a>
+        <a href="CV.html">
+            <button>Curriculum Vitae</button>
+        </a>
+    </div>
     </nav>
     <article>
       <div id="section1">
